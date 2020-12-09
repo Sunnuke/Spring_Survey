@@ -9,18 +9,22 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 <body>
-	<div class="container">
+<div class="container">
 	<h2><u>Submitted Information</u></h2>
-	<div class="col-md-2">
-		<p>Name:</p>
-		<p><c:out value="${name}"/></p>
-		<p>Location:</p>
-		<p><c:out value="${location}"/></p>
-		<p>Language:</p>
-		<p><c:out value="${language}"/></p>
-		<p>Comment:</p>
-		<p><c:out value="${comment}"/></p>
+	<div class="row">
+		<div class="col-md-2">
+			<p>Name:</p>
+			<p>Location:</p>
+			<p>Language:</p>
+			<p>Comment:</p>
+		</div>
+		<div class="col-md-2">	
+			<p><c:out value="${name}"/></p>
+			<p><c:out value="${location}"/></p>
+			<p><c:out value="${language}"/></p>
+			<p><c:out value="${comment}"/></p>
+		</div>
 	</div>
-	</div>
+</div>
 </body>
 </html>

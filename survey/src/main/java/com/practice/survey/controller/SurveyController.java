@@ -21,9 +21,7 @@ public class SurveyController {
 		session.setAttribute("name", name);
 		session.setAttribute("location", location);
 		session.setAttribute("language", language);
-		if (comment == null) {
-			session.setAttribute("comment", comment);
-		}
+		session.setAttribute("comment", comment);
 		return "redirect:/result";
 	}
 	
@@ -32,9 +30,7 @@ public class SurveyController {
 		model.addAttribute("name", session.getAttribute("name"));
 		model.addAttribute("location", session.getAttribute("location"));
 		model.addAttribute("language", session.getAttribute("language"));
-		if (session.getAttribute("comment") == null) {
-			model.addAttribute("comment", session.getAttribute("comment"));
-		}
+		model.addAttribute("comment", session.getAttribute("comment"));
 		return "result.jsp";
 	}
 	
